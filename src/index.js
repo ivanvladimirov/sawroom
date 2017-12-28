@@ -4,8 +4,6 @@ import { Router, Route } from 'react-router';
 import createHistory from 'history/createBrowserHistory'
 import registerServiceWorker from './registerServiceWorker';
 
-import Breadcrumb from 'react-simple-breadcrumb';
-
 // Includes
 import 'bootstrap/dist/css/bootstrap.css';
 import './Assets/css/layout.css';
