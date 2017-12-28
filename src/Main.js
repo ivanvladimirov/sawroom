@@ -20,7 +20,7 @@ class Main extends Component {
           <Header />
           <div className='MainLayout'>
             <Sidenav />
-            Test4i
+            another test
             <Route exact path='/logo' component={Logo} />
           </div>
         </div>
