@@ -8,10 +8,14 @@ class Sidenav extends Component {
           <div className="small">Navigation</div>
           <NavLink exact={true} activeClassName="menu-active" to="/">
             <i className="fa fa-home fa-menu" aria-hidden="true"></i> 
-            <span>Home</span> 
-            <i className="fa fa-chevron-left fa-menutwo" aria-hidden="true"></i>
+              Home
+            <i className="fa fa-chevron-right fa-menu-arrow" aria-hidden="true"></i>
           </NavLink>
-          <NavLink activeClassName="menu-active" to="/logo"><i className="fa fa-users fa-menu" aria-hidden="true"></i> Reservations</NavLink>
+          <NavLink activeClassName="menu-active" to="/logo">
+            <i className="fa fa-users fa-menu" aria-hidden="true"></i>
+              Reservations
+            <i className="fa fa-chevron-right fa-menu-arrow" aria-hidden="true"></i>
+          </NavLink>
           <NavLink to="/"><i className="fa fa-trello fa-menu" aria-hidden="true"></i> Tables</NavLink>
           <NavLink to="/"><i className="fa fa-envelope fa-menu" aria-hidden="true"></i> Emails</NavLink>
           <NavLink to="/"><i className="fa fa-print fa-menu" aria-hidden="true"></i> Invoice</NavLink>

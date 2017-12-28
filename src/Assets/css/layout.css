@@ -184,12 +184,11 @@ nav.sidenav {
     vertical-align: bottom;
     line-height: 46px;
     transition: all 0.1s; }
-  nav.sidenav .fa-menutwo {
-    color: #383838;
-    font-size: 17px;
-    width: 32px;
-    vertical-align: bottom;
-    line-height: 46px;
+  nav.sidenav .fa-menu-arrow {
+    font-size: 8px;
+    line-height: 50px;
+    margin-right: 20px;
+    float: right;
     transition: all 0.1s; }
 
 body {
@@ -206,3 +205,5 @@ body {
 
 .MainLayout {
   display: flex; }
+  .MainLayout .container {
+    border: 1px solid red; }

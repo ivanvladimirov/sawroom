@@ -32,12 +32,11 @@ nav.sidenav {
         transition: all 0.1s;
     }
 
-    .fa-menutwo { 
-        color:#383838;
-        font-size: 17px;
-        width: 32px;
-        vertical-align: bottom;
-        line-height: 46px;
+    .fa-menu-arrow { 
+        font-size: 8px;
+        line-height: 50px;
+        margin-right: 20px;
+        float: right;
         transition: all 0.1s;
     }
 }
