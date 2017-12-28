@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:800");
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: #cb3e4b;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px; }
+
+.logo {
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 150px;
+  height: 150px; }
+
+.menu-active {
+  box-shadow: inset 3px 0px 0px 0px #cb3e4b;
+  background: #232323;
+  color: white !important; }
+
+a.menu-active {
+  color: white !important; }
+
+a.menu-active .fa-menu {
+  color: white !important; }
+
+.small {
+  font-size: 10px;
+  height: 50px;
+  line-height: 48px;
+  padding: 0 23px;
+  text-transform: uppercase; }
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 0 18px;
+  border-bottom: 1px solid #262626;
+  line-height: 50px; }
+  header .logo {
+    background-size: 35px;
+    width: 35px;
+    height: 50px;
+    background-position: 0 7px; }
+  header .heading {
+    font-family: "Catamaran", sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+    transform: scale(1, 0.9);
+    padding-top: 1px; }

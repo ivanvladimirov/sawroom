@@ -1,0 +1,43 @@
+@import 'colors';
+@import 'default';
+
+nav.sidenav {
+    width: 250px;
+    background-color: $gray-darkest;
+    height: 100vh;
+
+    a {
+        display: block;
+        height: 50px;
+        line-height: 47px;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: $gray-lighter;
+        padding-left: 25px;
+        box-sizing: border-box;
+    }
+
+    a:hover .fa-menu, a:hover {
+        color: $white !important;
+        transition: all 0.1s;
+        background: #232323;
+    }
+
+    .fa-menu { 
+        color:#383838;
+        font-size: 17px;
+        width: 32px;
+        vertical-align: bottom;
+        line-height: 46px;
+        transition: all 0.1s;
+    }
+
+    .fa-menutwo { 
+        color:#383838;
+        font-size: 17px;
+        width: 32px;
+        vertical-align: bottom;
+        line-height: 46px;
+        transition: all 0.1s;
+    }
+}

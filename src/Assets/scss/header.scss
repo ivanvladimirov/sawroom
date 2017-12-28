@@ -1,0 +1,31 @@
+@import 'colors';
+@import 'default';
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: $gray-darkest;
+    padding: 0 18px;
+    border-bottom: 1px solid $gray-darker;
+    line-height: 50px;
+
+    .logo {
+        background-size: 35px;
+        width: 35px;
+        height: 50px;
+        background-position: 0 7px;
+    }
+
+    .heading {
+        font-family: $bold-font;
+        color: $white;
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: top;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        font-size: 15px;
+        transform: scale(1, 0.9);
+        padding-top: 1px;
+    }
+}
