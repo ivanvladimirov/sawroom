@@ -23,7 +23,16 @@ body {
 .MainLayout {
     display: flex;
 
-    .container {
+    .content {
+        width: 100%;
+
+        .breadcrumbContainer {
+            background-color: $gray-darker;
+            height: 75px;
+        }
+    }
+
+    .contentWrapper {
         border: 1px solid red;
     }
 }

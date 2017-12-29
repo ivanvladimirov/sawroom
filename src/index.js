@@ -12,8 +12,16 @@ import './Assets/css/layout.css';
 import MainLayout from './Layouts/MainLayout.jsx';
 import NotFound from './Layouts/NotFound.jsx';
 
-// Used Components in Routes
-import Logo from './Components/Logo/';
+// Views
+import Home from './Views/Home/';
+import Reservations from './Views/Reservations/';
+import Tables from './Views/Tables/';
+import Emails from './Views/Emails/';
+import Invoice from './Views/Invoice/';
+import Files from './Views/Files/';
+import FAQ from './Views/FAQ/';
+import Graphs from './Views/Graphs/';
+import Game from './Views/Game/';
 
 // Variables
 const history = createHistory();
@@ -21,8 +29,15 @@ const history = createHistory();
 ReactDOM.render((
     <Router history={history}>
         <Route component={MainLayout}>
-            <Route path="/" />
-            <Route path="/logo" component={Logo} />
+            <Route path="/" component={Home} />
+            <Route path="/reservations" component={Reservations} />
+            <Route path="/tables" component={Tables} />
+            <Route path="/emails" component={Emails} />
+            <Route path="/invoice" component={Invoice} />
+            <Route path="/files" component={Files} />
+            <Route path="/faq" component={FAQ} />
+            <Route path="/graphs" component={Graphs} />
+            <Route path="/game" component={Game} />
         </Route>
     </Router>
 ), document.getElementById('root'));

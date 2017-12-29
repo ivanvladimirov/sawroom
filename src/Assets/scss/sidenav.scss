@@ -2,7 +2,7 @@
 @import 'default';
 
 nav.sidenav {
-    width: 250px;
+    min-width: 250px;
     background-color: $gray-darkest;
     height: 100vh;
 
