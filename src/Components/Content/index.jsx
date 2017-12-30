@@ -13,8 +13,6 @@ import FAQ from './../../Views/FAQ/';
 import Graphs from './../../Views/Graphs/';
 import Game from './../../Views/Game/';
 
-const home = '<i className="fa fa-home fa-menu" aria-hidden="true"></i>';
-
 const routes = {
   '/': 'Home',
   '/reservations': 'Reservations',
@@ -34,17 +32,21 @@ class Content extends Component {
           <div className="breadcrumbContainer">
             <div className="container">
               <Breadcrumbs 
-              WrapperComponent={(props) => <div className="breadcrumb" >{props.children}</div>}
-              ActiveLinkComponent={(props) => <span>{props.children}</span>}
+              WrapperComponent={(props) => <div className="breadcrumbs">{props.children}</div>} 
+              ActiveLinkComponent={(props) => <span className="pageTitle">{props.children}</span>}
               LinkComponent={(props) => ''}
               mappedRoutes={routes} />
-              <Breadcrumbs mappedRoutes={routes} />
+              <Breadcrumbs 
+              WrapperComponent={(props) => <div className="breadcrumbs">{props.children}</div>}
+              LinkComponent={(props) => <span>{props.children}</span>} 
+              ActiveLinkComponent={(props) => <span className="breadcrumbsItem">{props.children}</span>}
+              mappedRoutes={routes} />
             </div>
           </div>
             <div className="container">
               <div className='contentWrapper'>
                 <Route exact path='/' component={Home} />
-                <Route startsWith={true} path="/reservations" component={Reservations} />
+                <Route path="/reservations" component={Reservations} />
                 <Route path="/tables" component={Tables} />
                 <Route path="/emails" component={Emails} />
                 <Route path="/invoice" component={Invoice} />
@@ -55,7 +57,7 @@ class Content extends Component {
               </div>
             </div>
           </div>
-  );
+          );
   }
 }
 

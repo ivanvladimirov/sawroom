@@ -39,4 +39,15 @@ nav.sidenav {
         float: right;
         transition: all 0.1s;
     }
+    
+
+    // Menu Active Element
+    .menu-active {
+        background: #232323;
+        box-shadow: inset 0px 1px 0px 0px $gray-darkest, inset 0px -1px 0px 0px $gray-darkest, inset 3px 0px 0px 0px $primary ;
+        color: $white !important;
+    }
+    
+    a.menu-active {color: $white !important;}
+    a.menu-active .fa-menu {color: $white !important;}
 }

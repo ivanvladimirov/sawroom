@@ -1,0 +1,133 @@
+@import 'default';
+@import 'colors';
+@import 'header';
+@import 'sidenav';
+
+body {
+    font-family: $main-font;
+    color: $gray-lighter;
+    background-color: $background;
+    font-size: $main-font-size;
+    margin: 0;
+
+    a, a:visited, a:link, a:active {
+        transition: all 0.1s;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $primary-darker;
+        text-decoration: none;
+        transition: all 0.1s;
+    }
+}
+
+*, ::before, ::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+.MainLayout {
+    display: flex;
+
+    .content {
+        width: 100%;
+
+        .container {
+            width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .pageTitleHome {
+            color: $white;
+            position: absolute;
+            top: 76px;
+            font-family: $main-font;
+        }
+
+        .breadcrumbContainer {
+            background-color: $gray-darker;
+            height: 75px;
+
+            .breadcrumbs {
+                display: inline-block;
+                background: none;
+                border-radius: 0;
+                padding: 0;
+                margin: 0;
+                line-height: 75px;
+
+                a {
+                    color: $primary;
+                    text-indent: 0%;
+                    line-height: 100%;
+                    font-size: 13px;
+                }
+
+                a:hover {
+                    color: $primary-darker;
+                    text-decoration: underline;
+                }
+
+                span:first-child:before {
+                    content: '';
+                    padding: 0;
+                }
+
+                span:before {
+                    content: '/';
+                    padding: 0 7px;
+                    color: $gray-light;
+                }
+
+                span:first-child a {
+                    text-indent: -1000%;
+                    display: inline-block;
+                    position: relative;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 13px;
+                }
+
+                span:first-child a:before {
+                    content: "\f015";
+                    color: $primary;
+                    position: absolute;
+                    top: 1px;
+                    left: 0;
+                    text-indent: 0%;
+                    font-family: 'FontAwesome';
+                    height: 19px;
+                }
+
+                span:first-child a:hover::before {
+                    color: $primary-darker;
+                }
+
+                .pageTitle {
+                    color: $white;
+                    margin-right: 35px;
+                    font-size: 20px;
+                }
+
+                .breadcrumbsItem {
+                    font-size: 13px;
+                    color: $gray-lighter;
+                }
+
+                .breadcrumbsItem:before {
+                    content: '/';
+                    padding: 0 5px;
+                    color: $gray-light;
+                }
+            }
+        }
+    }
+
+    .contentWrapper {
+        padding: 20px 0;
+    }
+}

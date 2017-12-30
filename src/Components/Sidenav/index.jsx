@@ -5,7 +5,7 @@ class Sidenav extends Component {
   render() {
     return (
         <nav className="sidenav">
-          <div className="small">Navigation</div>
+          <h4>Navigation</h4>
           <NavLink exact={true} activeClassName="menu-active" to="/">
             <i className="fa fa-home fa-menu" aria-hidden="true"></i> 
               Home

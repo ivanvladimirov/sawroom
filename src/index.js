@@ -5,8 +5,7 @@ import createHistory from 'history/createBrowserHistory'
 import registerServiceWorker from './registerServiceWorker';
 
 // Includes
-import 'bootstrap/dist/css/bootstrap.css';
-import './Assets/css/layout.css';
+import './Assets/css/MainLayout.css';
 
 // Main Layouts
 import MainLayout from './Layouts/MainLayout.jsx';
