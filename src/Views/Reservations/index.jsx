@@ -4,7 +4,7 @@ class Reservations extends Component {
   render() {
     return (
     <div>
-        This is my reservations page.
+        This is my Reservations page.
     </div>
     );
   }

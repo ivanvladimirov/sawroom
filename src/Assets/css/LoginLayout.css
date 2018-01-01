@@ -81,26 +81,35 @@ hr {
   background-color: #cb3e4b !important;
   color: #ffffff !important; }
 
-header {
-  height: 50px;
-  width: 100%;
-  background-color: #1a1a1a;
-  padding: 0 18px;
-  border-bottom: 1px solid #262626;
-  line-height: 50px; }
-  header .logo {
-    background-size: 35px;
-    width: 35px;
-    height: 50px;
-    background-position: 0 7px; }
-  header .heading {
-    font-family: "Catamaran", sans-serif;
-    color: #ffffff;
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: top;
-    text-transform: uppercase;
-    letter-spacing: -0.5px;
-    font-size: 15px;
-    transform: scale(1, 0.9);
-    padding-top: 1px; }
+.LoginLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .LoginLayout .container {
+    width: 300px;
+    border: 1px dotted #2d2d2d;
+    padding: 10px 20px; }
+    .LoginLayout .container .header {
+      line-height: 50px;
+      height: 50px; }
+      .LoginLayout .container .header .logo {
+        background-size: 35px;
+        width: 35px;
+        height: 50px;
+        background-position: 0 7px; }
+      .LoginLayout .container .header .heading {
+        font-family: "Catamaran", sans-serif;
+        color: #ffffff;
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: top;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        font-size: 15px;
+        transform: scale(1, 0.9);
+        padding-top: 1px; }
+      .LoginLayout .container .header .icon {
+        float: right;
+        height: 100%;
+        color: #cb3e4b; }

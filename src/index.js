@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route } from 'react-router';
+import { BrowserRouter as Router, Route, Link, Match, Redirect, Switch } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 import registerServiceWorker from './registerServiceWorker';
 
 // Includes
 import './Assets/css/MainLayout.css';
+import './Assets/css/LoginLayout.css';
 
 // Main Layouts
 import MainLayout from './Layouts/MainLayout.jsx';
-import NotFound from './Layouts/NotFound.jsx';
+import LoginLayout from './Layouts/LoginLayout.jsx';
 
 // Views
 import Home from './Views/Home/';
@@ -25,19 +26,32 @@ import Game from './Views/Game/';
 // Variables
 const history = createHistory();
 
+const DashboardRoute = ({component: Component, ...rest}) => {
+    return (
+      <Route {...rest} render={matchProps => (
+        <MainLayout>
+            <Component {...matchProps} />
+        </MainLayout>
+      )} />
+    )
+  };
+
+  const LoginRoute = ({component: Component, ...rest}) => {
+    return (
+      <Route {...rest} render={matchProps => (
+        <LoginLayout>
+            <Component {...matchProps} />
+        </LoginLayout>
+      )} />
+    )
+  };
+
 ReactDOM.render((
     <Router history={history}>
-        <Route component={MainLayout}>
-            <Route path="/" component={Home} />
-            <Route path="/reservations" component={Reservations} />
-            <Route path="/tables" component={Tables} />
-            <Route path="/emails" component={Emails} />
-            <Route path="/invoice" component={Invoice} />
-            <Route path="/files" component={Files} />
-            <Route path="/faq" component={FAQ} />
-            <Route path="/graphs" component={Graphs} />
-            <Route path="/game" component={Game} />
-        </Route>
+        <Switch>
+            <LoginRoute path="/login" component={LoginLayout} />
+            <DashboardRoute path="/" />
+        </Switch>
     </Router>
 ), document.getElementById('root'));
 registerServiceWorker();

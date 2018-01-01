@@ -9,6 +9,30 @@ $main-font: 'Roboto', sans-serif;
 $bold-font: 'Catamaran', sans-serif;
 $main-font-size: 13px;
 
+body {
+  font-family: $main-font;
+  color: $gray-lighter;
+  background-color: $background;
+  font-size: $main-font-size;
+  margin: 0;
+
+  a, a:visited, a:link, a:active {
+      transition: all 0.1s;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: $primary-darker;
+      text-decoration: none;
+      transition: all 0.1s;
+  }
+}
+
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 // Logo
 .logo {
   background-image: url('../img/logo.png');
@@ -46,4 +70,26 @@ h2 {
 h1 {
   @extend h3;
   font-size: 20px;
+}
+
+// Other main elements
+
+svg {
+  color: white;
+}
+
+hr {
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $gray-dark;
+    margin: 5px 0;
+    padding: 0; 
+}
+
+// UI Elements
+
+.button {
+  background-color: $primary !important;
+  color: $white !important;
 }

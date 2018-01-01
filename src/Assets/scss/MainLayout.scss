@@ -3,32 +3,6 @@
 @import 'header';
 @import 'sidenav';
 
-body {
-    font-family: $main-font;
-    color: $gray-lighter;
-    background-color: $background;
-    font-size: $main-font-size;
-    margin: 0;
-
-    a, a:visited, a:link, a:active {
-        transition: all 0.1s;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: $primary-darker;
-        text-decoration: none;
-        transition: all 0.1s;
-    }
-}
-
-*, ::before, ::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-
 .MainLayout {
     display: flex;
 
