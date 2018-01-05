@@ -83,35 +83,37 @@ hr {
   background-color: #cb3e4b !important;
   color: #ffffff !important; }
 
-.LoginLayout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; }
-  .LoginLayout .container {
-    width: 300px;
-    border: 1px dotted #2d2d2d;
-    padding: 10px 20px; }
-    .LoginLayout .container .header {
-      line-height: 50px;
-      height: 50px; }
-      .LoginLayout .container .header .logo {
-        background-size: 35px;
-        width: 35px;
-        height: 50px;
-        background-position: 0 7px; }
-      .LoginLayout .container .header .heading {
-        font-family: "Catamaran", sans-serif;
-        color: #ffffff;
-        display: inline-block;
-        margin-left: 10px;
-        vertical-align: top;
-        text-transform: uppercase;
-        letter-spacing: -0.5px;
-        font-size: 15px;
-        transform: scale(1, 0.9);
-        padding-top: 1px; }
-      .LoginLayout .container .header .icon {
-        float: right;
-        height: 100%;
-        color: #cb3e4b; }
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+  padding-top: 40px; }
+
+.height {
+  height: 700px; }
+
+.faq-fixed-menu {
+  text-align: left; }
+
+.faq-fixed-menu li {
+  list-style: none; }
+  .faq-fixed-menu li a {
+    box-sizing: border-box;
+    padding-left: 22px;
+    transition: all 0s !important;
+    height: 30px;
+    line-height: 29px;
+    display: block; }
+  .faq-fixed-menu li a:hover {
+    color: #ffffff;
+    border-left: 2px solid #ffffff;
+    padding-left: 20px !important; }
+
+.is-current a {
+  color: #cb3e4b;
+  border-left: 2px solid #cb3e4b;
+  padding-left: 20px !important; }
+
+.is-current a:hover {
+  color: #cb3e4b !important;
+  border-left: 2px solid #cb3e4b !important; }

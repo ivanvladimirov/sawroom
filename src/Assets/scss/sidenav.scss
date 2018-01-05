@@ -4,7 +4,7 @@
 nav.sidenav {
     min-width: 250px;
     background-color: $gray-darkest;
-    height: 100vh;
+    min-height: 100%;
 
     a {
         display: block;

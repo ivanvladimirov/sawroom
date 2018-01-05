@@ -25,6 +25,8 @@ body {
   background-color: #212121;
   font-size: 13px;
   margin: 0; }
+  body a {
+    color: #525252; }
   body a, body a:visited, body a:link, body a:active {
     transition: all 0.1s;
     text-decoration: none; }

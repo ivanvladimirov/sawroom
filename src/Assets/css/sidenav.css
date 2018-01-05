@@ -25,6 +25,8 @@ body {
   background-color: #212121;
   font-size: 13px;
   margin: 0; }
+  body a {
+    color: #525252; }
   body a, body a:visited, body a:link, body a:active {
     transition: all 0.1s;
     text-decoration: none; }
@@ -84,7 +86,7 @@ hr {
 nav.sidenav {
   min-width: 250px;
   background-color: #1a1a1a;
-  height: 100vh; }
+  min-height: 100%; }
   nav.sidenav a {
     display: block;
     height: 50px;

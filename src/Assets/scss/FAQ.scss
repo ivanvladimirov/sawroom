@@ -1,0 +1,49 @@
+@import 'colors';
+@import 'default';
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    padding-top: 40px;
+}
+
+.height {
+    height: 700px;
+}
+
+.faq-fixed-menu {
+    text-align: left;
+}
+
+.faq-fixed-menu li {
+    list-style: none;
+
+    a {
+        box-sizing: border-box;
+        padding-left: 22px;
+        transition: all 0s !important;
+        height: 30px;
+        line-height: 29px;
+        display: block;
+    }
+
+    a:hover {
+        color: $white;
+        border-left: 2px solid $white;
+        padding-left: 20px !important;
+    }
+}
+.is-current {
+
+    a {
+        color: $primary;
+        border-left: 2px solid $primary;
+        padding-left: 20px !important;
+    }
+
+    a:hover {
+        color: $primary !important;
+        border-left: 2px solid $primary !important;
+    }
+}
